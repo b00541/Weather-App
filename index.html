@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,26 +18,54 @@
                 src='https://www.free-website-hit-counter.com/c.php?d=9&id=144863&s=55' border='0'
                 alt='Free Website Hit Counter'></a><br /></div>
 
+
     <div class="background"></div>
     <div class="listApp">
         <div class="inputDiv">
-         
+
             <input id="input" placeholder="Search a city...">
 
-        <button id="addButton" onclick="fetchData()">Search</button>
-    </div>
+            <button id="addButton" onclick="fetchData()">Search</button>
+        </div>
         <h1 id="city"></h1>
-    <div id="hourly" class="hourly">
-        <div><p class="time">Midnight</p><p class="timetemp" id="midnightPast"></p></span></div>
-        <div><p class="time">3am</p> <p     class="timetemp" id="3am"></p></span></div>
-        <div><p class="time">6am</p> <p     class="timetemp" id="6am"></p></span></div>
-        <div><p class="time">9am</p> <p     class="timetemp" id="9am"></p></span></div>
-        <div><p class="time">12pm</p><p     class="timetemp" id="midday"></p></span></div>
-        <div><p class="time">3pm</p> <p     class="timetemp" id="3pm"></p></span></div>
-        <div><p class="time">6pm</p> <p     class="timetemp" id="6pm"></p></span></div>
-        <div><p class="time">9am</p> <p     class="timetemp" id="9pm"></p></span></div>
-        <div><p class="time">Midnight</p><p class="timetemp" id="midnightfuture"></p></span></div>
-    </div>
+        <div id="hourly" class="hourly">
+            <div>
+                <p class="time">Midnight</p>
+                <p class="timetemp" id="midnightPast"></p></span>
+            </div>
+            <div>
+                <p class="time">3am</p>
+                <p class="timetemp" id="3am"></p></span>
+            </div>
+            <div>
+                <p class="time">6am</p>
+                <p class="timetemp" id="6am"></p></span>
+            </div>
+            <div>
+                <p class="time">9am</p>
+                <p class="timetemp" id="9am"></p></span>
+            </div>
+            <div>
+                <p class="time">12pm</p>
+                <p class="timetemp" id="midday"></p></span>
+            </div>
+            <div>
+                <p class="time">3pm</p>
+                <p class="timetemp" id="3pm"></p></span>
+            </div>
+            <div>
+                <p class="time">6pm</p>
+                <p class="timetemp" id="6pm"></p></span>
+            </div>
+            <div>
+                <p class="time">9am</p>
+                <p class="timetemp" id="9pm"></p></span>
+            </div>
+            <div>
+                <p class="time">Midnight</p>
+                <p class="timetemp" id="midnightfuture"></p></span>
+            </div>
+        </div>
 
     </div>
 
@@ -45,4 +74,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

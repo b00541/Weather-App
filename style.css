@@ -14,8 +14,8 @@
 
 }
 
-
-body, .listApp {
+body,
+.listApp {
     display: flex;
 }
 
@@ -28,7 +28,7 @@ body {
     width: 100vw;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,6 +37,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     transition: all 2s;
+
 }
 
 
@@ -56,8 +57,8 @@ body {
     backdrop-filter: blur(9.6px);
     -webkit-backdrop-filter: blur(9.6px);
     border: 1px solid rgba(71, 173, 186, 0.2);
-    
-    max-width:max-content;
+
+    max-width: max-content;
     min-width: 20vw;
     min-height: 40vh;
     max-height: fit-content;
@@ -78,10 +79,11 @@ input {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(145, 145, 145, 0.43);
-    padding:10px;
+    padding: 10px;
     color: white;
-    
+
 }
+
 input::placeholder {
     color: white;
 
@@ -101,7 +103,7 @@ button {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid white;
-    padding:10px;
+    padding: 10px;
     cursor: pointer;
     object-fit: cover;
 }
@@ -110,17 +112,19 @@ h1 {
     line-height: 8vh;
     color: white;
 }
+
 .hourly {
     display: flex;
     /* justify-content: space-around; */
 }
-.hourly > div {
+
+.hourly>div {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 4vw;
     margin: 0 4px;
-/* From https://css.glass */
+    /* From https://css.glass */
     background: rgba(145, 145, 145, 0.33);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -130,7 +134,7 @@ h1 {
     color: white;
 }
 
-.time{
+.time {
     font-weight: bold;
 
 }
@@ -154,10 +158,12 @@ h1 {
     height: 5px;
 }
 
+
 #counter {
     position: fixed;
     bottom: 0;
     pointer-events: none;
+    opacity: 0.5;
 }
 
 
@@ -175,20 +181,22 @@ h1 {
 
 
 
+
 @media screen and (max-width: 1000px) {
     .listApp {
         width: 80vw;
     }
 
     .hourly {
-        width:100%;
+        width: 100%;
         overflow-x: scroll;
     }
 
-    .hourly > div {
+    .hourly>div {
         min-width: 80px;
         height: 100px;
     }
+
     /* .time{
         font-size: 8px;
     }
