@@ -31,6 +31,7 @@ async function fetchData() {
     //This is to handle user errors. Before it was added, if user just pressed enter for the prompt it would return the first city in SA begining with A
     let i = 0
     let userCity = input.value
+    input.value = ""
 
     //----------------------------------------------------------------------------------------------------------------------------------------------------
 
